@@ -1,6 +1,7 @@
 import streamlit
-streamlit.title("Web App")
-streamlit.header("Jaydip Web App")
-streamlit.text("Hello World !!")
-
-
+import pandas
+streamlit.title("YashOne Food App")
+streamlit.header("Get your food at your Door step...")
+streamlit.text("what food We Serves :")
+food = pandas.read_csv(uni-lab-files.s3.us-west-2amazonaws.com/dabw/fruit_macros.txt)
+streamlit.dataframe(food)
