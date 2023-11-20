@@ -5,7 +5,7 @@ streamlit.header("Get fruits at your Door step...")
 streamlit.text("what fruits We delivers :")
 food = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
 streamlit.dataframe(food)
-selected_fruits = streamlit.multiselect("Pick the Fruits you would like to it : ",list(food['Fruit']))
+selected_fruits = streamlit.multiselect("Pick the Fruits you would like to it : ",list(food.index))
 cart = food.loc[selected_fruits]
 streamlit.text("Your Cart")
 streamlit.dataframe(cart)
