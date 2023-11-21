@@ -9,6 +9,6 @@ food = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fr
 #food = food.set_index('Fruit')
 streamlit.dataframe(food)
 selected_fruits = streamlit.multiselect("Pick the Fruits you would like to it : ",list(food['Fruit']))
-cart = food.loc[selected_fruits]
+cart = food['Fruit'].loc[selected_fruits]
 streamlit.text("Your Cart")
 streamlit.dataframe(cart)
