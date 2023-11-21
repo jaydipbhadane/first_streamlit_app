@@ -1,7 +1,7 @@
 import streamlit
 import pandas
 
-streamlit.title("YashOne Fruit Shop")
+streamlit.title("YashOne Fruit Shop !!")
 streamlit.header("Get fruits at your Door step...")
 streamlit.text("what fruits We delivers :")
 
